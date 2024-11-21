@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="instructions-container">
+        <h2>How to Play</h2>
+        <p>
+          Guess the hidden 5-letter word in six attempts. Each time you guess, the tiles will change color to indicate how close your guess is to the target word:
+        </p>
+        <ul>
+          <li><span class="tile correct">Correct</span>: The letter is in the correct position.</li>
+          <li><span class="tile present">Present</span>: The letter is in the word but in the wrong position.</li>
+          <li><span class="tile absent">Absent</span>: The letter is not in the word at all.</li>
+        </ul>
+        <p>
+          The category for this game is: <strong id="category">Types of Fruits</strong>.
+        </p>
+        <p>Use the input box to type your guess and hit "Submit" to check it. Good luck!</p>
+      </div>
+      <div id="game-container">
+        <h1>Word Game</h1>
+        <div id="word-grid">
+          <!-- Dynamically generated rows -->
+        </div>
+        <input type="text" id="guess-input" maxlength="5" placeholder="Enter your guess" />
+        <button id="submit-btn">Submit</button>
+        <p id="feedback"></p>
+      </div>
+      
+  <script src="script.js"></script>
+</body>
+</html>

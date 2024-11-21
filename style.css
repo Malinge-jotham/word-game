@@ -1,0 +1,129 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #game-container {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    color: #343a40;
+  }
+  
+  #word-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .tile {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #6c757d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    background-color: white;
+    color: #495057;
+  }
+  
+  .tile.correct {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .tile.present {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .tile.absent {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  #guess-input {
+    padding: 10px;
+    width: calc(100% - 20px);
+    max-width: 380px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  #submit-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  #feedback {
+    margin-top: 10px;
+    color: #dc3545;
+    font-weight: bold;
+  }
+  /* Instructions Container */
+#instructions-container {
+    text-align: center;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #instructions-container h2 {
+    color: #343a40;
+    margin-bottom: 10px;
+  }
+  
+  #instructions-container p,
+  #instructions-container ul {
+    color: #495057;
+    font-size: 1em;
+  }
+  
+  #instructions-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #instructions-container li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #instructions-container .tile {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    border: 1px solid #ced4da;
+  }
+  
